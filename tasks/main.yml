@@ -1,0 +1,15 @@
+---
+# motd/tasks/main.yml
+
+- name: 'motd | set motd banner'
+  copy:
+    content: "{{ motd__content }}"
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: 0644
+    seuser: system_u
+    serole: object_r
+    setype: etc_t
+  tags:
+    - motd

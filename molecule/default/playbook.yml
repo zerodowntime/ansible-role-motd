@@ -1,0 +1,14 @@
+---
+
+- name: Converge
+  hosts: all
+  become: true
+  roles:
+    - role: zerodowntime.motd
+      motd__content: |
+
+        WARNING !!!: Unauthorized access to this system is forbidden and will be
+        prosecuted by law. All connections are monitored and recorded.
+
+        !!! Disconnect IMMEDIATELY if you are not an authorized user!
+        ---

@@ -1,0 +1,20 @@
+---
+# zerodowntime.motd/meta/main.yml
+
+dependencies: []
+
+galaxy_info:
+  role_name: motd
+  author: ZeroDowntime
+  description: Set MOTD banner
+  company: ZeroDowntime Sp. z o.o.
+  license: Apache License 2.0
+
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: EL
+      versions:
+        - 7
+  galaxy_tags:
+    - motd
